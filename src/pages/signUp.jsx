@@ -1,7 +1,7 @@
 import AuthLayout from "../components/Layouts/AuthLayout";
 import FormSignUp from "../components/Fragments/FormSignUp";
 
-function signUp() {
+function SignUpPage() {
   return (
     <AuthLayout>
       <FormSignUp />
@@ -9,4 +9,4 @@ function signUp() {
   );
 }
 
-export default signUp;
+export default SignUpPage;

@@ -1,7 +1,7 @@
 import AuthLayout from "../components/Layouts/AuthLayout";
 import FormSignIn from "../components/Fragments/FormSignIn";
 
-function signIn() {
+function SignInPage() {
   return (
     <AuthLayout>
       <FormSignIn />
@@ -9,4 +9,4 @@ function signIn() {
   );
 }
 
-export default signIn;
+export default SignInPage;

@@ -1,6 +1,6 @@
 import LabeledInput from "../Elements/LabeledInput";
-import CheckBox from "../Elements/CheckBox";
 import Button from "../Elements/Button";
+import { Link } from "react-router-dom";
 
 function FormSignUp() {
   return (
@@ -13,7 +13,7 @@ function FormSignUp() {
               label="Name"
               id="name"
               type="text"
-              placeceholder="Irfan"
+              placeholder="Irfan"
               name="name"
             />
           </div>
@@ -35,15 +35,12 @@ function FormSignUp() {
               name="password"
             />
           </div>
-          <div className="mb-3">
-            <CheckBox
-              label="Keep me signed in"
-              id="status"
-              type="checkbox"
-              name="status"
-            />
+          <div className="flex justify-center gap-1 text-sm text-gray-03">
+            <span>By continuing, you agree to our</span>
+            <a className="text-primary text-sm">terms of service</a>
           </div>
-          <Button>Login</Button>
+          <br />
+          <Button>Sign Up</Button>
         </form>
       </div>
       {/* form end */}
@@ -89,7 +86,9 @@ function FormSignUp() {
       {/* link start */}
       <div className="flex justify-center gap-1 text-sm text-gray-03">
         <span>Already have an account?</span>
-        <a className="text-primary text-sm font-bold">Sign in here</a>
+        <Link to="/login" className="text-primary text-sm font-bold">
+          Sign in here
+        </Link>
       </div>
       {/* link end */}
     </>
